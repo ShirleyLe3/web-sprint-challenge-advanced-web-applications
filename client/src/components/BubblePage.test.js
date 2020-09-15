@@ -3,24 +3,19 @@ import { render, screen } from "@testing-library/react";
 import BubblePage from "./BubblePage";
 
 test("Fetches data and renders the bubbles", () => {
-  // Finish this test
-  //   const { getByText } = render(<BubblesPage />);
-  //   const linkElement = getByText(/learn react/i);
-  //   expect(linkElement).toBeInTheDocument();
+  const ;
+  // // Act
+  const { getAllByTestId, rerender } = render(<BubblesPage bubbles/>);
+  expect(linkElement).toBeInTheDocument();
+  rerender(<BubblesPage bubbles={colors} />);
+  // // Assert
+  expect(getAllByTestId(/doggo images/i)).toHaveLength(3);
 });
 
 // test("entering an invalid value shows an error message", () => {
 //   const { getByLabelText, getByRole, queryByRole, rerender } = render(
 //     <PhoneNumber />
 //   );
-//   const input = getByLabelText(/favorite number/i);
-//   // test component
-//   expect(getByRole("alert")).toHaveTextContent(/the number is invalid/i);
-
-//   rerender(<PhoneNumber phoneNumber={"2025550113"} />);
-
-//   expect(queryByRoll("alert")).toBeNull();
-// });
 
 // test("renders user data", async () => {
 //   const fakeUser = {
